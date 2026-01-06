@@ -1,0 +1,86 @@
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: "CaskaydiaMono NF SemiBold",serif;
+}
+
+li {
+    font-family: "CaskaydiaMono NF",serif;
+    margin-top: 10pt;
+}
+
+p {
+    font-family: Corbel,serif;
+    font-size: 18pt;
+}
+
+
+table {
+    margin: 10px;
+    background: #252525;
+    width: 98%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-radius: 20px;
+}
+
+td {
+    overflow-wrap: break-word;
+    padding: 15px;
+}
+
+td:first-child {
+    width: 250px;
+}
+
+td:nth-child(even) {
+    border-radius: 10pt;
+}
+
+#button {
+    margin-top: 10px;
+    width: 12em;
+    padding: 0 0 1em 0;
+    margin-bottom: 1em;
+    font-family: "FiraCode Nerd Font Mono",'CaskaydiaMono NF Light', 'Lucida Grande',
+    Verdana, Lucida, Geneva, Helvetica,
+    Arial, sans-serif;
+    font-size: 10pt;
+    background-color: #1d2021;
+    color: #ffffff;
+}
+
+#button ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+#button li {
+    border-bottom: 5px solid #181a1b;
+    margin: 0;
+}
+
+#button li a {
+    display: block;
+    padding: 5px 5px 5px 0.5em;
+    border-left: 10px solid #181a1b;
+    border-right: 10px solid #888888;
+    background-color: #333333;
+    color: #a49482;
+    text-decoration: none;
+    width: 100%;
+    transition-duration: 0.5s;
+}
+
+#button li a:hover {
+    border-left: 10px solid #400e00;
+    border-right: 10px solid #f44707;
+    background-color: coral;
+    color: white;
+    box-shadow: 40px 0 0 coral;
+    transform: scale(1.2,1.2);
+}

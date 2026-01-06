@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cong Vu Bui - Final Project</title>
+    <link rel="icon" type="image/x-icon" href="newspaper.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <link href="../../../css/mainStyle.css" rel="stylesheet"/>
+    <link href="final.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div id="toolBar">
+    <a class="btn" href="../../../main/index.html" style="float: left;">home</a>
+    <a class="btn" href="https://online.saskpolytech.ca/" style="float: right;">myBrightspace</a>
+    <a class="btn" href="https://mysaskpolytech.ca/" style="float: right;">mySaskpoly</a>
+    <a class="btn" href="https://outlook.office.com/mail/" style="float: right;">myOutlook</a>
+    <a class="btn" href="../../../main/aboutMe.html" style="float: right;">aboutMe</a>
+</div>
+
+<div id="logo">
+    <a href="index.html">
+        <img src="../../../image/sask.png" alt="sask" style="width: 100pt">
+    </a>
+</div>
+
+<!--News-->
+<div class="container newsCon">
+    <div class="row">
+        <div class="col-12">
+            <h6>Latest News</h6>
+            <div id="randomNews"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <button type="button" onclick="getRandomHotNews()">Get news</button>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--OPEN WEATHER
+    Get weather information from open weather map-->
+<div class="container weatherCon">
+    <!--Put row and column-->
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <h5>OpenWeatherMap Weather Search</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 col-12">
+            <table>
+                <tr>
+                    <td>
+                        <div class="radioButton">
+                            <div>
+                                <input type="radio"
+                                       id="cN"
+                                       name="searchType"
+                                       value="city"
+                                       onchange="radioSelect()">
+                                <label class="cNL" for="cN">City Name</label>
+                            </div>
+                            <div>
+                                <input type="radio"
+                                       id="pC"
+                                       name="searchType"
+                                       value="postal"
+                                       onchange="radioSelect()">
+                                <label for="pC">Postal Code</label>
+                            </div>
+                            <div>
+                                <input type="radio"
+                                       id="lL"
+                                       name="searchType"
+                                       value="lola"
+                                       onchange="radioSelect()">
+                                <label for="lL">Latitude / Longitude</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <div class="col-sm-8 col-12">
+            <div class="input-group" id="cityOption">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="CityNameTextbox">City Name:</label>
+                        </td>
+                        <td>
+                            <input id="CityNameTextbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="CountryCodeTextbox">Country Code:</label>
+                        </td>
+                        <td>
+                            <input id="CountryCodeTextbox">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="input-group" id="postalOption">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="PostalCodeTextbox">Postal Code:</label>
+                        </td>
+                        <td>
+                            <input id="PostalCodeTextbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="PostalCountryCodeTextbox">Country Code:</label>
+                        </td>
+                        <td>
+                            <input id="PostalCountryCodeTextbox">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="input-group" id="lolaOption">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="LatitudeTextbox">Latitude:</label>
+                        </td>
+                        <td>
+                            <input id="LatitudeTextbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="LongitudeTextbox">Longitude:</label>
+                        </td>
+                        <td>
+                            <input id="LongitudeTextbox">
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <button type="button" id="SearchButton" onclick="searchWeather()" style="position: relative; z-index: 10">Search</button>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <table>
+                <tr>
+                    <td>
+                        <p id="SearchResults"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<br>
+<!--LOAD FILE PROJECTS-->
+<div class="container projectCon">
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <h5>My COMP215 Projects</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <button type="button" onclick="loadDoc()" style="position: relative; z-index: 10">Get my Lab project</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <table>
+                <tr>
+                    <td>
+                        <table class="VUList" id="demo"></table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="bottomBar">
+    <a class="btn" href="../Lab8/lab8_2.html" style="float: right;">◀ previous</a>
+    <a style="font-weight: bold">Cong Vu Final Project</a>
+    <a class="btn" href="../Lab1/default.html" style="float: right;">next ▶</a>
+</div>
+
+<!--JavaScript-->
+<script>
+
+    window.onload = function () {
+        radioSelect(); // To hide input elements when load the page
+    }
+
+    // Load projects
+    function loadDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            myFunction(this);
+        }
+        xhttp.open("GET", "myProject.xml");
+        xhttp.send();
+    }
+
+    function myFunction(xml) {
+        const xmlDoc = xml.responseXML;
+        const x = xmlDoc.getElementsByTagName("LAB");
+        let table = "<tr><th>Title</th><th>Link</th></tr>";
+        for (let i = 0; i < x.length; i++) {
+            const title = x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
+            const link = x[i].getElementsByTagName("LINK")[0].childNodes[0].nodeValue;
+
+            table += "<tr><td>" + title + "</td><td>" +
+                "<a class='btn' href='" + link + "'>View Project</a>" +
+                "</td></tr>";
+        }
+        document.getElementById("demo").innerHTML = table;
+    }
+
+
+    // Get weather data
+    function radioSelect() {
+        document.getElementById("cityOption").style.display = "none";
+        document.getElementById("postalOption").style.display = "none";
+        document.getElementById("lolaOption").style.display = "none";
+
+        const selectedValue = document.querySelector('input[name="searchType"]:checked').value;
+        if (selectedValue === 'city') {
+            document.getElementById("cityOption").style.display = "block";
+        } else if (selectedValue === "postal") {
+            document.getElementById("postalOption").style.display = "block";
+        } else if (selectedValue === "lola") {
+            document.getElementById("lolaOption").style.display = "block";
+        }
+    }
+
+    function searchWeather() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                var SearchResponse = this.responseText;
+                //document.getElementById("ResponseText").innerHTML = SearchResponse;
+                var obj = JSON.parse(SearchResponse);
+                var city_name = obj["name"];
+                var country_name = obj["sys"]["country"];
+                var weather_description = obj["weather"][0]["description"];
+                var temp = obj["main"]["temp"];
+
+                let feels_like = obj["main"]["feels_like"];
+                var wind_speed = obj["wind"]["speed"];
+                var SearchResultsHTML = "City: " + city_name + "<br />" +
+                    "Country: " + country_name + "<br />"
+                    +
+                    "Weather: " + weather_description +
+                    "<br />" +
+                    "Temperature: " + temp + " °Celcius" + "<br />" +
+                    "Feels like: " + feels_like + " °Celcius" + "<br />" +
+                    "Wind Speed: " + wind_speed + " m/h";
+                $("#SearchResults").html(SearchResultsHTML);
+            }
+            ;
+        }
+        var apiKey = "652e5516b1c87d1ae0a7990d25dc5267"; // My personal API of OpenWeather
+
+        var SearchString = "";
+        const selectedValue = document.querySelector('input[name="searchType"]:checked').value;
+
+        if (selectedValue === 'city') {
+            var CityName = $("#CityNameTextbox").val();
+            var CountryCode = $("#CountryCodeTextbox").val();
+            SearchString = "https://api.openweathermap.org/data/2.5/weather"
+                + "?q=" + CityName + "," + CountryCode
+                + "&units=metric"
+                + "&APPID=" + apiKey;
+        } else if (selectedValue === 'postal') {
+            let PostalCode = $('#PostalCodeTextbox').val();
+            let CountryCode = $("#PostalCountryCodeTextbox").val();
+            SearchString = "https://api.openweathermap.org/data/2.5/weather"
+                + "?zip=" + PostalCode + "," + CountryCode
+                + "&units=metric"
+                + "&APPID=" + apiKey;
+        } else if (selectedValue === "lola") {
+            let Longitude = $("#LongitudeTextbox").val();
+            let Latitude = $("#LatitudeTextbox").val();
+            SearchString = "https://api.openweathermap.org/data/2.5/weather"
+                + "?lat=" + Latitude + "&lon=" + Longitude
+                + "&units=metric"
+                + "&APPID=" + apiKey;
+        }
+
+
+        xhttp.open("GET", SearchString, true);
+        xhttp.send();
+    }
+
+    // Get NEWS
+    function getRandomHotNews() {
+        var apiKey = "pub_8e9cd7e147b54dd1961de65a528b77e1";
+        var apiURL = "https://newsdata.io/api/1/latest?apikey="
+            + apiKey
+            + "&country=ca&language=en" /* "&country=vi&language=vi" */;
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                var response = JSON.parse(this.responseText);
+                var articles = response.results;
+
+                // Pick a random article
+                var randomIndex = Math.floor(Math.random() * articles.length);
+                var article = articles[randomIndex];
+
+                // Display the random article
+                var newsHTML = '<div class="hot-news">'
+                    + '<h5>' + article.title + '</h5>'
+                    + '<p>' + (article.description || 'No description available') + '</p>'
+                    + '<a class="btn" href="' + article.link + '" target="_blank">Read full article</a>'
+                    + '<p><small>Source: '
+                    + article.source_id + ' | ' + article.pubDate + '</small></p>'
+                    + '</div>';
+
+                document.getElementById("randomNews").innerHTML = newsHTML;
+            }
+        };
+
+        xhttp.open("GET", apiURL, true);
+        xhttp.send();
+    }
+</script>
+
+</body>
+</html>

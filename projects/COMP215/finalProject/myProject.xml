@@ -1,0 +1,30 @@
+<PROJECT>
+    <LAB>
+        <TITLE>LAB 1</TITLE>
+        <LINK>../main/error.html</LINK>
+    </LAB>
+    <LAB>
+        <TITLE>LAB 2</TITLE>
+        <LINK>../main/error.html</LINK>
+    </LAB>
+    <LAB>
+        <TITLE>LAB 3</TITLE>
+        <LINK>../main/error.html</LINK>
+    </LAB>
+    <LAB>
+        <TITLE>LAB 4</TITLE>
+        <LINK>../Lab4/chessboard.html</LINK>
+    </LAB>
+    <LAB>
+        <TITLE>LAB 5</TITLE>
+        <LINK>../Lab5/js_calculator.html</LINK>
+    </LAB>
+    <LAB>
+        <TITLE>LAB 8</TITLE>
+        <LINK>../Lab8/lab8_2.html</LINK>
+    </LAB>
+    <LAB>
+        <TITLE>FINAL</TITLE>
+        <LINK>../finalProject/index.html</LINK>
+    </LAB>
+</PROJECT>
