@@ -1,6 +1,6 @@
 function getProduct() {
-    var select = document.getElementById("productSelect");
-    var selectedValue = select.value;
+    let select = document.getElementById("productSelect");
+    let selectedValue = select.value;
     if (selectedValue === "default") return 0;
     if (selectedValue === "Base Cabinets") return 1;
     if (selectedValue === "Wall Cabinets") return 2;
@@ -24,9 +24,9 @@ function getLineName() {
 }
 
 function changeProductImage() {
-    var productType = getProduct();
-    var img = document.getElementById("productImage");
-    var cornerUnits = document.getElementById("CUnits");
+    let productType = getProduct();
+    let img = document.getElementById("productImage");
+    let cornerUnits = document.getElementById("CUnits");
     if (productType === 0) {
         img.src = "img/fromKitchen.gif";
         cornerUnits.style.visibility = '';
@@ -68,7 +68,7 @@ function getCornerUnits() {
 
 function pricePerFoot() {
     let product = getProduct();
-    var line = getLine();
+    let line = getLine();
     if (product === 2 && line === 1) return 99.99; //alert("wall cabinet & empire standard");
     else if (product === 2 && line === 2) return 179.00; //alert("wall cabinet & kitchen elite");
     else if (product === 2 && line === 3) return 200.99; //alert("wall cabinet & gold star plus");
