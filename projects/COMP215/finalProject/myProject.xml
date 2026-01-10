@@ -1,17 +1,5 @@
 <PROJECT>
     <LAB>
-        <TITLE>LAB 1</TITLE>
-        <LINK>../../main/error.html</LINK>
-    </LAB>
-    <LAB>
-        <TITLE>LAB 2</TITLE>
-        <LINK>../../main/error.html</LINK>
-    </LAB>
-    <LAB>
-        <TITLE>LAB 3</TITLE>
-        <LINK>../../main/error.html</LINK>
-    </LAB>
-    <LAB>
         <TITLE>LAB 4</TITLE>
         <LINK>../Lab4/chessboard.html</LINK>
     </LAB>
