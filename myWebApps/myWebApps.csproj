@@ -69,7 +69,6 @@
     <Content Include="Assets\fonts\fonts\firaV.woff" />
     <Content Include="Assets\image\chess.gif" />
     <Content Include="Assets\image\sask.png" />
-    <Content Include="Assets\Pages\index.html" />
     <Content Include="Assets\Pages\main\contactMe.html" />
     <Content Include="Assets\Pages\main\error.html" />
     <Content Include="Assets\Pages\projects\COMP215\finalProject\cloud.gif" />
@@ -155,6 +154,7 @@
     <Content Include="Assets\Pages\projects\COMP235\L1_2\ShippingCalc.aspx" />
     <Content Include="Assets\Pages\projects\projects.html" />
     <Content Include="Global.asax" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
