@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PizzaRequestPOST</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../../../../css/main.css">
+</head>
+<body>
+    <div class="container ztoolbar">
+        <div style="text-align: center">
+            <a class="btn toolbtn" href="../index.html">Home</a>
+        </div>
+    </div>
+    <div>
+        <form action="PizzaProcessingPOST.aspx" method="post">
+
+            <div class="container">
+
+                <div class="container bcon">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <h6>ENTER YOUR NAME</h6>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <input type="text" name="txtUser" />
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="container bcon">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <h6>SELECT YOUR TOPPING</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-3">
+                            Pepperoni <input type="checkbox" name="toppingType" id="1" value="Pepperoni" />
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            Green pepper <input type="checkbox" name="toppingType" id="2" value="Green pepper" />
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            Ham <input type="checkbox" name="toppingType" id="3" value="Ham" />
+                        </div>
+                        <div class="col-xs-12 col-md-3">
+                            Pineapple <input type="checkbox" name="toppingType" id="4" value="Pineapple" />
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="container bcon">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <h6>SIZE</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            Small <input type="radio" name="size" value="small">
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            Medium <input type="radio" name="size" value="medium">
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            Large <input type="radio" name="size" value="large">
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <input type="submit" value="Place Order">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

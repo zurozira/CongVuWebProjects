@@ -1,0 +1,71 @@
+body {
+    font-family: "Trebuchet MS", serif;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+td, th {
+    padding: 10px;
+    border: 2px solid #a49482;
+    border-radius: 7px;
+}
+
+.formFill {
+    padding: 20px;
+    border-collapse: collapse;
+    border: 2px solid #a49482;
+    background: #252525;
+}
+
+input {
+    border-radius: 7px;
+}
+
+
+a:link, a:active, a:visited {
+    color: #a49482;
+}
+
+a:hover {
+    color: coral;
+}
+
+.ValidateMe {
+    border: 1pt solid #a49482;
+}
+
+.ValidateMe:focus {
+    border: 1pt solid coral;
+
+    color: black;
+}
+
+input[type="submit"] {
+    border: 1pt solid #a49482;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.2,1.2);
+}
+
+.formFill {
+    transition-duration: 1s;
+}
+
+.formFill:hover {
+    transform: scale(1.2,1.2);
+}
+
+.resultTable {
+    transition-duration: 1s;
+}
+
+.resultTable:hover {
+    transform: scale(1.2,1.2);
+}
+
+

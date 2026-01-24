@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COMP215 Sign in Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="8.css">
+</head>
+<body>
+<div id="toolBar">
+    <a class="btn" href="../../../index.html" style="float: left;">home</a>
+    <a class="btn" href="https://online.saskpolytech.ca/" style="float: right;">myBrightspace</a>
+    <a class="btn" href="https://mysaskpolytech.ca/" style="float: right;">mySaskpoly</a>
+    <a class="btn" href="https://outlook.office.com/mail/" style="float: right;">myOutlook</a>
+    <a class="btn" href="../../../main/contactMe.html" style="float: right;">contactMe</a>
+</div>
+<!-- -->
+
+<div id="logo">
+    <a href="../../../index.html">
+        <img class="sasklogo" src="../../../../image/sask.png" alt="sask" style="width: 100pt">
+    </a>
+</div>
+
+<main id="contactPage">
+    <div class="container vuFill" id="aaa">
+        <div class="row justify-content-center">
+            <div class="col-auto formFill">
+                <form id="vuForm" style="text-align: right">
+                    First name: <input class="ValidateMe" type="text" id="firstname" name="firstname" required
+                                       pattern=".{2,15}" autofocus
+                                       autocomplete="off"/> <br><br>
+                    Address: <input class="ValidateMe" type="text" id="address" name="address" required/><br/><br>
+                    Email: <input class="ValidateMe" type="email" id="email" name="email" required/><br/> <br/>
+                    <input type="submit" value="Click to submit" id="SubmitButton"/><br/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto resultTable">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Contact name</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th><a class="deleteAll" href="#">Delete All</a></th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<div>
+    <div id="bottomBar">
+        <a class="btn" href="../Lab5/js_calculator.html" style="float: right;">◀ previous</a>
+        <a style="font-weight: bold">LAB 8</a>
+        <a class="btn" href="../finalProject/index.html" style="float: right;">next ▶</a>
+
+    </div>
+</div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            var mainElement = document.getElementById('contactPage');
+
+            loadContacts();  // (declared below) loads and displays existing data
+
+            function loadContacts() {
+                var contactsStored = localStorage.getItem('contacts');
+
+                if (contactsStored) { // check if we have any stored data
+
+                    // if we have data (in JSON) , then parse back into an array of data objects = "records"
+                    var contacts = JSON.parse(contactsStored);
+
+                    // loop through all the array elements of the contacts array ...
+                    // and then execute a function on each element
+                    $.each(contacts, function (index, contact) {
+                        // contacts[index] or contact gives the current array element
+                        // for each element, build an html row
+                        var row = $('<tr>'); // creates a new html tr or row element
+
+                        // create the inner html for the row: 4 cols (td's)
+                        // containing the column values from each property of the current array element
+                        // notice the delete link will need to have click event attached later
+                        var html = '<td>' + contact.firstname + '</td>' +
+                            '<td>' + contact.address + '</td>' +
+                            '<td>' + contact.email + '</td>' +
+                            '<td><a class="delete" href="#">delete</a></td>';
+
+                        // tag the new row with the id for the contact record object
+                        row.data().contactId = contact.id;
+
+                        // put the html inside the row
+                        row.append(html);
+                        // now add the row to the table at teh end of the tbody
+                        $(mainElement).find('table tbody').append(row);
+                    });
+                }
+            }
+
+            // same as Lab 10
+            function serializeForm() {
+                var inputFields = $(mainElement).find('form :input');
+                var result = {};
+                $.each(inputFields, function (index, value) {
+                    if ($(value).attr('name')) {
+                        result[$(value).attr('name')] = $(value).val();
+                    }
+                });
+                return result;
+            }
+
+            function store(contact) {
+                var contactsStored = localStorage.getItem('contacts');
+                var contacts = [];
+                if (contactsStored) {
+                    contacts = JSON.parse(contactsStored);
+                }
+                contacts.push(contact);
+                localStorage.setItem('contacts', JSON.stringify(contacts));
+            }
+
+            function saveContact() {
+                // get the for data into a data object
+                var contact = serializeForm(); // create one property for form input: firstname, email , address
+
+                // create a unique identifier (primary key) for the new contact record
+                // as an id property
+                contact.id = $.now(); // use the system clock to get a number (# milliseconds since 1970/01/01)
+
+                var row = $('<tr>'); // create a row object
+                // load the row object with the contact object data
+                var html = '<td>' + contact.firstname + '</td>' +
+                    '<td>' + contact.address + '</td>' +
+                    '<td>' + contact.email + '</td>' +
+                    '<td><a class="delete" href="#">delete</a></td>';
+
+                // tag the new row with the id for the contact record object
+                row.data().contactId = contact.id;
+
+                // add the new td's to the row
+                row.append(html);
+
+                // store the new contact object in loacal storage
+                store(contact);
+
+                // attach the new row to the table
+                $(mainElement).find('table tbody').append(row);
+                $(mainElement).find('form :input[name]').val('');
+            }
+
+            function deleteContact(evt) {
+                var contactId = $(evt.target).parents('tr').data().contactId;
+                var contacts = JSON.parse(localStorage.getItem('contacts'));
+                var newContacts = contacts.filter(function (c) {
+                    return c.id != contactId;
+                });
+                localStorage.setItem('contacts', JSON.stringify(newContacts));
+                $(evt.target).parents('tr').remove();
+            }
+
+            $(mainElement).find("a.deleteAll").click(
+                function (evt) {
+                    evt.preventDefault();
+                    localStorage.clear();
+                    $(mainElement).find('table tbody').empty();
+                }
+            );
+
+            $(mainElement).on("click", "a.delete",
+                function (evt) {
+                    evt.preventDefault();
+                    deleteContact(evt);
+                }
+            );
+
+            $(mainElement).find('form input[type="submit"]').click(
+                function (evt) {
+
+                    let firstName = document.getElementById("firstname");
+                    let uAddress = document.getElementById("address");
+                    let email = document.getElementById("email");
+
+                    firstName.oninvalid = function (e) {
+                        e.target.setCustomValidity("");
+                        if (!e.target.validity.valid) {
+                            if (e.target.value.length === 0) {
+                                e.target.setCustomValidity("Don't you have a name?");
+                            } else if (e.target.value.length < 2) {
+                                e.target.setCustomValidity("At least 2 characters");
+                            } else if (e.target.value.length > 15) {
+                                e.target.setCustomValidity("Maximum 15 characters");
+                            }
+                        }
+                    };
+
+                    uAddress.oninvalid = function (e) {
+                        e.target.setCustomValidity("");
+                        if (!e.target.validity.valid) {
+                            if (e.target.value.length === 0) {
+                                e.target.setCustomValidity("Everyone has an address :)");
+                            }
+                        }
+                    }
+
+                    email.oninvalid = function (e) {
+                        e.target.setCustomValidity("");
+                        if (!e.target.validity.valid) {
+                            if (e.target.value.length === 0) {
+                                e.target.setCustomValidity("Come on! You need an email!");
+                            }
+                        }
+                    }
+
+
+                    const form = document.getElementById("vuForm");
+
+                    const isValid = form.checkValidity();
+                    form.reportValidity();
+
+
+                    // on submit button click ...
+                    if (!isValid) {
+                        return; // Do nothing (not saving the contact)
+                    }
+
+                    evt.preventDefault(); // stop form submit
+                    saveContact(); // process and save the form data
+                });
+
+
+        });
+    </script>
+</main>
+
+
+</body>
+</html>

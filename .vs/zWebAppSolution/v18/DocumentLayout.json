@@ -1,0 +1,236 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1_2\\l1_2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1_2\\l1_2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1_2\\paymentcalc.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1_2\\paymentcalc.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1_2\\shippingcalc.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1_2\\shippingcalc.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1\\l1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1\\l1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1\\part3\\rejected.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1\\part3\\rejected.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1\\part3\\guest.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1\\part3\\guest.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1\\part3\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1\\part3\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1\\part3\\landingpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1\\part3\\landingpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1\\part3\\loginpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1\\part3\\loginpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1\\part1\\pizzarequestpost.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1\\part1\\pizzarequestpost.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|d:\\zprojects\\gitrepos\\congvuwebprojects\\mywebapps\\assets\\pages\\projects\\comp235\\l1\\part1\\pizzaprocessingpost.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{E4ED5109-A32B-4A89-BB5D-CB7F3536CFA6}|myWebApps\\myWebApps.csproj|solutionrelative:mywebapps\\assets\\pages\\projects\\comp235\\l1\\part1\\pizzaprocessingpost.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "L1_2.html",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\L1_2.html",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\L1_2.html",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\L1_2.html",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\L1_2.html",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAywCgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-24T02:57:11.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "projects.html",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\projects.html",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\projects.html",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\projects.html",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\projects.html",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-24T02:32:17.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaymentCalc.aspx",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\PaymentCalc.aspx",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\PaymentCalc.aspx",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\PaymentCalc.aspx",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\PaymentCalc.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-24T02:55:21.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShippingCalc.aspx",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\ShippingCalc.aspx",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\ShippingCalc.aspx",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\ShippingCalc.aspx",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1_2\\ShippingCalc.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-24T02:55:11.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Rejected.html",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Rejected.html",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Rejected.html",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Rejected.html",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Rejected.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-24T02:35:28.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "L1.html",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\L1.html",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\L1.html",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\L1.html",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\L1.html",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-24T02:30:53.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Guest.aspx",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Guest.aspx",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Guest.aspx",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Guest.aspx",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Guest.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-24T02:35:09.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Admin.aspx",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Admin.aspx",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Admin.aspx",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Admin.aspx",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\Admin.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-24T02:34:51.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LandingPage.aspx",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\LandingPage.aspx",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\LandingPage.aspx",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\LandingPage.aspx",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\LandingPage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-24T02:34:33.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginPage.html",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\LoginPage.html",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\LoginPage.html",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\LoginPage.html",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part3\\LoginPage.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-24T02:34:11.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PizzaRequestPOST.html",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part1\\PizzaRequestPOST.html",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part1\\PizzaRequestPOST.html",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part1\\PizzaRequestPOST.html",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part1\\PizzaRequestPOST.html",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAywGEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-24T02:31:36.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PizzaProcessingPOST.aspx",
+              "DocumentMoniker": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part1\\PizzaProcessingPOST.aspx",
+              "RelativeDocumentMoniker": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part1\\PizzaProcessingPOST.aspx",
+              "ToolTip": "D:\\zProjects\\gitRepos\\CongVuWebProjects\\myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part1\\PizzaProcessingPOST.aspx",
+              "RelativeToolTip": "myWebApps\\Assets\\Pages\\projects\\COMP235\\L1\\Part1\\PizzaProcessingPOST.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-24T02:31:16.426Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
