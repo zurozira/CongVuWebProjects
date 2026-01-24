@@ -6,7 +6,7 @@ I am currently a student at Saskatchewan Polytechnic in Regina, where I'm pursui
 
 ### Project Information
 This repository contains my website with all my web-related projects — including school assignments and personal work I do in my free time. </br>
-I'll try to update it as much as possible :) Soon I'll implement dotNet and C# in my web as well - Coming soon
+I'll try to update it as much as possible :)
 
 ### Link
 Visit it here: https://zurozira.github.io/CongVuWebProjects/
