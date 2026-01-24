@@ -1,7 +1,15 @@
+/* ================================
+   FONTS & TYPOGRAPHY
+   ================================ */
+
 @font-face {
     font-family: 'FiraV';
     src: url('../fonts/fonts/firaV.woff') format('woff');
 }
+
+/* ================================
+   BASE STYLES
+   ================================ */
 
 body {
     font-family: "FiraV", "CaskaydiaMono NF Light", serif;
@@ -11,34 +19,14 @@ body {
     -moz-user-select: none;
 }
 
-#toolBar {
-    font-family: "FiraV", "CaskaydiaMono NF Light", serif;
-    font-size: 9pt;
-    padding: 8px;
-    display: flex;
-    background-color: #282828;
-    justify-content: space-between;
-    border-radius: 8pt;
-    margin: 10px
+h1 {
+    font-family: "CaskaydiaMono NF SemiBold", serif;
 }
 
-#bottomBar {
-    margin: 10px;
-    font-family: "FiraV", "CaskaydiaMono NF Light", serif;
-    font-size: 9pt;
-    padding: 8px;
-    display: flex;
-    background-color: #282828;
-    justify-content: space-between;
-    border-radius: 8pt;
-}
 
-#logo {
-    display: flex;
-    margin: 6pt;
-    padding: 8pt;
-    justify-content: center;
-}
+/* ================================
+   LINKS
+   ================================ */
 
 a:link, a:visited, a:active, a:hover {
     text-decoration-line: none;
@@ -52,18 +40,55 @@ a:hover {
     color: #ffffff;
 }
 
+/* ================================
+   LAYOUT CONTAINERS
+   ================================ */
+
+#toolBar {
+    font-family: "FiraV", "CaskaydiaMono NF Light", serif;
+    font-size: 9pt;
+    padding: 8px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #282828;
+    border-radius: 8pt;
+}
+
+#bottomBar {
+    font-family: "FiraV", "CaskaydiaMono NF Light", serif;
+    font-size: 9pt;
+    padding: 8px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #282828;
+    border-radius: 8pt;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    margin: 6pt;
+    padding: 8pt;
+}
+
+/* ================================
+   TABLES
+   ================================ */
 
 table {
     margin: 10px;
-    background: #252525;
     width: 98%;
-    /*table-layout: fixed;*/
+    background: #252525;
     border-collapse: collapse;
+    border-radius: 20px;
+    table-layout: fixed;
 }
 
 td {
+    padding: 15px;
     overflow-wrap: break-word;
-    padding: 12px;
 }
 
 td:first-child {
@@ -74,48 +99,124 @@ td:nth-child(even) {
     border-radius: 10pt;
 }
 
+/* ================================
+   LISTS
+   ================================ */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-family: "CaskaydiaMono NF", serif;
+    margin-top: 10pt;
+}
+
+/* ================================
+   BUTTONS & INTERACTIVE ELEMENTS
+   ================================ */
+
 .btn {
     display: inline-flex;
     align-items: center;
     height: 18px;
     font-size: 11px;
+    color: #a49482;
     background-color: #4a4540;
     border-radius: 4px;
-    transition-duration: 0.5s;
     transition: all 0.5s ease;
-    color: #a49482;
-}
-.btn:hover {
-    transform: scale(1.3,1.3);
-    background-color: coral;
-    box-shadow: 0 0 40px coral;
-    color: white;
 }
 
+.btn:hover {
+    color: white;
+    background-color: coral;
+    box-shadow: 0 0 40px coral;
+    transform: scale(1.3, 1.3);
+}
+
+/* ================================
+   FORM INPUTS
+   ================================ */
+
 input {
-    background-color: #1d2021;
     color: #a49482;
-    border-radius: 4px;
+    background-color: #1d2021;
     border: none;
+    border-radius: 4px;
     transition-duration: 0.7s;
 }
 
 input:hover {
-    background-color: coral;
     color: white;
+    background-color: coral;
     box-shadow: 0 0 80px coral;
 }
+
 input:focus {
     outline: none;
     border: 1pt solid coral;
 }
+
+/* ================================
+   NAVIGATION MENU
+   ================================ */
+
+#button {
+    width: 12em;
+    margin-top: 10px;
+    margin-bottom: 1em;
+    padding: 0 0 1em 0;
+    font-family: 'CaskaydiaMono NF Light', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    background-color: #1d2021;
+    color: #ffffff;
+}
+
+#button ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+
+#button li {
+    margin: 0;
+    border-bottom: 5px solid #181a1b;
+}
+
+#button li a {
+    display: block;
+    width: 100%;
+    padding: 5px 5px 5px 0.5em;
+    color: #a49482;
+    background-color: #333333;
+    border-left: 10px solid #181a1b;
+    border-right: 10px solid #888888;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#button li a:hover {
+    color: white;
+    background-color: coral;
+    border-left: 10px solid #400e00;
+    border-right: 10px solid #f44707;
+    box-shadow: 40px 0 0 coral;
+    transform: scale(1.2, 1.2);
+}
+
+/* ================================
+   UTILITY CLASSES
+   ================================ */
 
 .sasklogo {
     transition-duration: 1s;
 }
 
 .sasklogo:hover {
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
 
-
+p.docTxt {
+    font-size: 14px;
+}

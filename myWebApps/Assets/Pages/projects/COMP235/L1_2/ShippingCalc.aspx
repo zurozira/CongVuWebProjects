@@ -16,7 +16,7 @@
 <body>
 
     <div style="text-align: center">
-        <a class="btn toolbtn" href="index.html">Home</a>
+        <a class="btn toolbtn" href="../../../../../index.html">Home</a>
     </div>
     <h4>LO2 - ASP.NET Framework</h4>
     <h5>Exercise 6 - Shipping Calculator using .NET Framework</h5>

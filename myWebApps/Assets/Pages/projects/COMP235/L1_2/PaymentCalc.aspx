@@ -16,7 +16,7 @@
 <body>
 
     <div style="text-align: center">
-        <a class="btn toolbtn" href="index.html">Home</a>
+        <a class="btn toolbtn" href="../../../../../index.html">Home</a>
     </div>
 
     <form id="form1" runat="server">

@@ -64,7 +64,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\css\homeStyle.css" />
     <Content Include="Assets\css\main.css" />
     <Content Include="Assets\fonts\fonts\firaV.woff" />
     <Content Include="Assets\image\chess.gif" />
